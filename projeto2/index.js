@@ -38,7 +38,7 @@ app.get("/ngames", (req, res) => {
   res.send(games);
 });
 
-//.length tamanho da lista
+
 app.get("/ngames/:id", (req, res) => {
   const id = req.params.id;
   const jogo = games[id - 1];
