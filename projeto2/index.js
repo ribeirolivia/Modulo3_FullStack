@@ -51,7 +51,7 @@ app.get("/ngames/:id", (req, res) => {
 
 app.get("/sugestao", (res, req) => {
   req.send(
-    `<h3>Nossa sugestão de jogo é: "${jogoAl(randomMinMax(0, 12))}"!</h3>`
+    `<h3>Nossa sugestão de jogo é: "${jogoAl(randomMinMax(0, games.length))}"!</h3>`
   );
 });
 
